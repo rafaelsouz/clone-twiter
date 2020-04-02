@@ -25,6 +25,8 @@ header#main-header {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   height: 46px;
   background: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 
 header#main-header .content {
@@ -95,4 +97,16 @@ header#main-header div.side button {
   color: #ffffff;
   border: 0;
   border-radius: 16px;
+}
+
+div.banner {
+  height: 380px;
+  width: 100%;
+  background: #3bb9e3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
 }
