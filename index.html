@@ -8,21 +8,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header id="main-header">
     <div class="content">
       <nav>
         <ul>
-          <li><img src="./assets/home.svg" alt="home"> Home</li>
-          <li><img src="./assets/bell.svg" alt="Notificações"> Notificações</li>
-          <li><img src="./assets/mail.svg" alt="Messagens"> Messagens</li>
+          <li><img src="./assets/home.svg" alt="home">Home</li>
+          <li><img src="./assets/bell.svg" alt="Notificações">Notifications</li>
+          <li><img src="./assets/mail.svg" alt="Messagens">Messages</li>
         </ul>
       </nav>
       <img src="./assets/logo.svg" alt="Logo Twitter">
       <div class="side">
-        <input type="text" placeholder="Buscar no Twitter">
-        <div src="./assets/avatar.jpg" alt="avatar">
+        <input type="text" placeholder="Search on Twitter">
+        <img src="./assets/avatar.jpg" alt="avatar">
         <button>Tweet</button>
-      </div>
+      </img>
     </div>
   </header>
 
@@ -75,7 +76,7 @@
       <span>@Rafaelsouz</span>
       <p>Studying NodeJS, React, React Native. Computer scientist.</p>
       
-      <ul>
+      <ul class="list">
         <li><img src="/assets/map-pin.svg" alt="Place">Petrolina, Pernambuco</li>
         
         <li>
@@ -85,17 +86,137 @@
           </a>
         </li>
         
-        <li><img src="/assets/clock.svg" alt="clock">Entrou em Junho de 2012</li>
-        <li><img src="assets/calendar.svg" alt="calendar">Nasceu em 1997</li>
+        <li><img src="/assets/clock.svg" alt="clock">Joined em June 2016</li>
+        <li><img src="assets/calendar.svg" alt="calendar">Born the 17th of december 1997</li>
       </ul>
+
+      <div class="widget followers">
+        <strong> <img src="/assets/followers.svg" alt="followers"> 73 followers that you know</strong>
+
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
+      <div class="widget images">
+        <strong> <img src="/assets/images.svg" alt="images"> 266 photos and videos</strong>
+
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+      </div>
     </aside>
+
     <section class="timeline">
-      timeline
+      <nav>
+        <a href="" class="active">Tweets</a>
+        <a href="">Tweets and replies</a>
+        <a href="">Medias</a>
+      </nav>
+
+      <ul class="tweets">
+        <li>
+          <img src="/assets/avatar.jpg" alt="Avatar">
+          <div class="info">
+            <strong>Rafael Souzas <span>@Rafaelsouz</span> </strong>
+            <p>Eae galera, tudo certo com vocês? o que acharam das novidades que vieram nessa nova versão 0.62 do React Native?</p>
+            
+            <div class="actions">
+              
+            </div>
+          </div>
+        </li>
+      </ul>
+ 
     </section>
-    <aside class="widget">
-      widget
+
+    <aside class="widgets">
+      <div class="widget follow">
+        <div class="title">
+          <strong>Who to follow</strong>
+          <a href="">Refresh</a>
+          <a href="">View all</a>
+        </div>
+
+        <ul>
+          <li>
+            <div class="to-follow">
+              <img src="/assets/avatar.jpg" alt="avatar">
+              <div class="info">
+                <strong>Rafael <span>@rafael</span></strong>
+                <button>Follow</button>
+              </div>
+            </div>
+            <a href=""><img src="/assets/x.svg" alt="x"></a>
+          </li>
+
+          <li>
+            <div class="to-follow">
+              <img src="/assets/avatar.jpg" alt="avatar">
+              <div class="info">
+                <strong>Rafael <span>@rafael</span></strong>
+                <button>Follow</button>
+              </div>
+            </div>
+            <a href=""><img src="/assets/x.svg" alt="x"></a>
+          </li>
+          
+          <li>
+            <div class="to-follow">
+              <img src="/assets/avatar.jpg" alt="avatar">
+              <div class="info">
+                <strong>Rafael <span>@rafael</span></strong>
+                <button>Follow</button>
+              </div>
+            </div>
+            <a href=""><img src="/assets/x.svg" alt="x"></a>
+          </li>
+
+          <li>
+            <a href="" class="find-friends"> 
+              <img src="/assets/find-friends.svg" alt="Find friends"> 
+              <p>Find friends</p>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="widget trends">
+        <div class="title">
+          <strong>Trends</strong>
+          <a href="">Change</a>
+        </div>
+
+        <p>#Flexbox</p>
+        <p>#ReactJS</p>
+        <p>#NodeJS</p>
+        <p>#ReactNative</p>
+        <p>#RocketSeat</p>
+        <p>#Javascript</p>
+        <p>#HTML</p>
+        <p>#CSS</p>
+
+      </div>
     </aside>
   </div>
   
+
+
 </body>
 </html>

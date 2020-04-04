@@ -226,7 +226,7 @@ div.wrapper-content aside.profile ul {
   margin-top: 20px;
 }
 
-div.wrapper-content aside.profile li {
+div.wrapper-content aside.profile ul.list li {
  font-size: 14px;
   color: #657786;
 
@@ -235,11 +235,11 @@ div.wrapper-content aside.profile li {
   margin-top: 5px;
 }
 
-div.wrapper-content aside.profile li:first-child {
+div.wrapper-content aside.profile ul.list li:first-child {
   margin: 0;
 }
 
-div.wrapper-content aside.profile li img {
+div.wrapper-content aside.profile ul.list li img {
   margin-right: 10px;
 }
 
@@ -247,6 +247,215 @@ div.wrapper-content aside.profile li a {
   text-decoration: none;
 }
 
+div.wrapper-content aside.profile .widget {
+  margin-top: 20px;
+}
 
+div.wrapper-content aside.profile .widget strong {
+  font-weight: normal;
+  color: #3bb9e3;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
 
+div.wrapper-content aside.profile .widget strong img {
+  margin-right: 5px;
+}
 
+div.wrapper-content aside.profile .followers ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+div.wrapper-content aside.profile .followers ul li {
+  width: 45px;
+  height: 45px;
+  background: #d0d5d9;
+  border-radius: 50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 0 5px 10px 0;
+}
+
+div.wrapper-content aside.profile .images ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+div.wrapper-content aside.profile .images ul li {
+  width: 80px;
+  height: 80px;
+  background: #d0d5d9;
+  border-radius: 8px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 0 5px 5px 0;
+}
+
+div.wrapper-content .timeline {
+  flex: 1;
+  background: #ffffff;
+  margin: 10px 20px 0;
+}
+
+div.wrapper-content .timeline nav {
+  border-bottom: 1px solid  #e6ecf0;
+  padding: 10px 15px;
+}
+
+div.wrapper-content .timeline nav a {
+  text-decoration: none;
+  color: #3bb9e3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+div.wrapper-content .timeline nav a:first-child {
+  margin: 0px;
+}
+
+div.wrapper-content .timeline nav a.active {
+  color: #1f2226;
+}
+
+div.wrapper-content aside.widgets {
+  width: 290;
+  margin-top: 10px;
+} 
+
+div.wrapper-content aside.widgets .widget {
+  background: #ffffff;
+  padding: 15px;
+} 
+
+div.wrapper-content aside.widgets .widget .title {
+  display: flex;
+  align-items: baseline;
+}
+
+div.wrapper-content aside.widgets .widget .title strong {
+  font-size: 18px;
+  color: #1f2226;
+}
+
+div.wrapper-content aside.widgets .widget .title a {
+  font-size: 12px;
+  color: #3bb9e3;
+  text-decoration: none;
+  position: relative;
+  padding-left: 10px;
+
+}
+
+div.wrapper-content aside.widgets .widget .title a::before {
+  content: ' ';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
+  left: 4px;
+  top: 6px;
+}
+
+div.wrapper-content aside.widgets .follow ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+div.wrapper-content aside.widgets .follow ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc6dd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+div.wrapper-content aside.widgets .follow ul li:last-child{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+div.wrapper-content aside.widgets .follow ul li .to-follow {
+  display: flex;
+  align-items: center;
+
+}
+
+div.wrapper-content aside.widgets .follow ul li .to-follow img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+div.wrapper-content aside.widgets .follow ul li .to-follow .info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper-content aside.widgets .follow ul li .to-follow .info strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+div.wrapper-content aside.widgets .follow ul li .to-follow .info strong span {
+  font-weight: normal;
+  color: #9a9a9a;
+}
+
+div.wrapper-content aside.widgets .follow ul li .to-follow .info button {
+  height: 27px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border: 1px solid #3bb9e3;
+  border-radius: 16px;
+  margin-top: 4px;
+}
+
+div.wrapper-content aside.widgets .follow ul li > a {
+  margin-top: 2.5px;
+}
+
+div.wrapper-content aside.widgets .follow ul li > a.find-friends {
+  display: flex;
+  align-items: center;
+  color: #3bb9e3;
+  text-decoration: none;
+}
+
+div.wrapper-content aside.widgets .follow ul li > a.find-friends p {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+div.wrapper-content aside.widgets .trends {
+  margin-top: 10px;
+}
+
+div.wrapper-content aside.widgets .trends div.title {
+  margin-bottom: 5px;
+}
+
+div.wrapper-content aside.widgets .trends p {
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: #3bb9e3;
+}
